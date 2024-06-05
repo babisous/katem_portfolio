@@ -1,0 +1,182 @@
+.slider {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	align-items: center;
+	padding: 24px;
+	gap: 24px;
+}
+
+.slidesContainer {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	position: relative;
+	box-sizing: content-box;
+	width: 80%;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	justify-content: space-between;
+	height: 100%;
+	width: 20%;
+	padding: 12px;
+}
+
+.image {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
+.title {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 12px;
+}
+
+.year {
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+}
+
+.buttonLeft {
+	height: 100%;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	width: 24px;
+	margin-right: 10px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.buttonRight {
+	height: 100%;
+	border-right: 1px solid white;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: none;
+	width: 24px;
+	margin-left: 10px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.buttonLeft:hover,
+.buttonRight:hover {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+.slideIndexContainer {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.slideIcon {
+	height: 14px;
+	width: 26px;
+	background-color: #d9d9d9;
+}
+
+.buttonLeftMobile {
+	display: none;
+}
+
+.buttonRightMobile {
+	display: none;
+}
+
+.detailsMobile {
+	display: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+	.slider {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.details {
+		display: none;
+	}
+
+	.slidesContainer {
+		width: 100%;
+		height: auto;
+		justify-content: center;
+	}
+
+	.image {
+		height: auto;
+		width: 95%;
+	}
+
+	.buttonLeft {
+		display: none;
+	}
+
+	.buttonRight {
+		display: none;
+	}
+
+	.buttonLeftMobile {
+		display: block;
+		height: 100%;
+		border: none;
+		width: 24px;
+		margin-right: 10px;
+		transition: background-color 0.3s, color 0.3s;
+	}
+
+	.buttonRightMobile {
+		display: block;
+		height: 100%;
+		border: none;
+		width: 24px;
+		margin-left: 10px;
+		transition: background-color 0.3s, color 0.3s;
+	}
+
+	.detailsMobile {
+		width: 95%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 12px;
+		gap: 12px;
+	}
+
+	.yearMobile {
+		align-self: flex-end;
+		font-size: 1em;
+		font-weight: bold;
+		color: white;
+		margin-top: 12px;
+	}
+
+	.controlsMobile {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin: 12px 0;
+	}
+
+	.slidesContainer {
+		padding: 0;
+	}
+
+	.title {
+		font-size: 1.2em;
+		margin-bottom: 12px;
+	}
+}

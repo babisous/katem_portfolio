@@ -1,0 +1,60 @@
+.gridContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 25px;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.gridItem {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh / 3);
+	cursor: pointer;
+	transition: all 0.15s ease;
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.gridItem.expanded {
+	grid-column: span 3;
+	height: 70vh;
+}
+
+.detailsContainer {
+	display: flex;
+	flex-direction: column;
+	background-color: #000000;
+	color: #fff;
+	padding: 10px;
+	opacity: 0;
+	transition: all 0.15s ease;
+}
+
+.gridItem:hover .detailsContainer {
+	opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+	.gridContainer {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.gridItem.expanded {
+		grid-column: span 1;
+		height: auto;
+	}
+}

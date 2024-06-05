@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.image {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.text {
+	width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+	.image {
+		width: 200px;
+		height: 200px;
+	}
+	.text {
+		width: 90%;
+	}
+}

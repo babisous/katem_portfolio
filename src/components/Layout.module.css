@@ -1,0 +1,96 @@
+/* src/components/Layout.module.css */
+.app {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: justify-content 0.3s ease;
+}
+
+.header {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 180px;
+	width: 496px;
+	z-index: 10;
+}
+
+.footer {
+	height: 130px;
+	width: 496px;
+	display: flex;
+	justify-content: center;
+	padding-top: 12px;
+	gap: 10px;
+	z-index: 10;
+}
+
+.footerLink {
+	font-size: 1em;
+	font-weight: 200;
+	text-decoration: none;
+}
+
+.footerLink.active {
+	text-decoration: underline;
+}
+
+.header.on-page,
+.footer.on-page {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	height: 0;
+	transition: all 0.5s ease-in-out;
+	z-index: 10;
+}
+
+.content.visible {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	transition: all 0.5s ease-in-out;
+}
+
+.content.hidden {
+	height: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.content.reverse {
+	transition: all 0.5s ease-in-out;
+	transform: translateY(100%);
+}
+
+.videoBackground {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		width: 80%;
+	}
+	.footer {
+		width: 80%;
+	}
+}
