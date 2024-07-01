@@ -33,9 +33,15 @@
 	font-size: 1em;
 	font-weight: 200;
 	text-decoration: none;
+	transition: all 1s ease;
+	cursor: pointer;
 }
 
 .footerLink.active {
+	text-decoration: underline;
+}
+
+.footerLink:hover {
 	text-decoration: underline;
 }
 

@@ -42,10 +42,30 @@
 	padding: 10px;
 	opacity: 0;
 	transition: all 0.15s ease;
+	min-width: 218px;
+	gap: 24px;
 }
 
 .gridItem:hover .detailsContainer {
 	opacity: 1;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 12px;
+}
+
+.discoverBtn {
+	border: none;
+	font-style: italic;
+	font-weight: 200;
+	cursor: pointer;
+}
+
+.year {
+	font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {

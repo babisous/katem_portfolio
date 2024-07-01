@@ -30,7 +30,10 @@ export default function RootLayout({
 	const logoHeight = children ? 50 : 76;
 
 	return (
-		<html lang="en">
+		<html lang="fr">
+			<head>
+				<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+			</head>
 			<body className={inter.className}>
 				<div
 					className={`${styles.app} ${

@@ -15,6 +15,10 @@
 	font-weight: bold;
 }
 
+.row {
+	display: flex;
+	gap: 6px;
+}
 /* uniquement contour du text */
 
 .link:hover {

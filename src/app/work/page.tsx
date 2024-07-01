@@ -75,7 +75,12 @@ const GridComponent = () => {
 						<div className={styles.detailsContainer}>
 							<h2 className={styles.title}>{project.name}</h2>
 							<p className={styles.desc}>{project.description}</p>
-							<p className={styles.year}>{project.year}</p>
+							<div className={styles.row}>
+								<p className={styles.year}>{project.year} ⁑</p>
+								<button className={styles.discoverBtn}>
+									Discover <img src="/arrow.svg" />
+								</button>
+							</div>
 						</div>
 					)}
 				</div>

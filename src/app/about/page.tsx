@@ -3,25 +3,21 @@ import styles from "./page.module.css";
 export default function About() {
 	return (
 		<div className={styles.container}>
-			<img className={styles.image} src="/images/about.png" alt="about" />
 			<div className={styles.text}>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-					mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-					mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis
-					tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
-					suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at
-					maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales
-					sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat
-					placerat. In iaculis arcu eros, eget tempus orci facilisis id.Lorem
-					ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-					Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-					mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis
-					tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
-					suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at
-					maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales
-					sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat
-					placerat. In iaculis arcu eros, eget tempus orci facilisis id.
+					Salut, moi c'est Thibault Grall (a.k.a Katem), designer graphique
+					passionné. Aventurier du design en général, j'explore et m'essaye à
+					tout type de création. Dans ce portfolio, vous découvrirez différents
+					projets issus de divers domaines. La plupart sont des créations
+					personnelles, mais vous trouverez également des travaux professionnels
+					et scolaires.
+				</p>
+				<p>
+					<strong>
+						<br />
+						Je suis actuellement à la recherche d'une alternance en design
+						graphique pour ma première année de Mastère !
+					</strong>
 				</p>
 			</div>
 		</div>
