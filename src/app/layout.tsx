@@ -33,6 +33,7 @@ export default function RootLayout({
 		<html lang="fr">
 			<head>
 				<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+				<title>Thibault Grall a.k.a Katem - Portfolio</title>
 			</head>
 			<body className={inter.className}>
 				<div
